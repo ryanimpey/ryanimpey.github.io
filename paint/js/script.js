@@ -1,5 +1,12 @@
+var valueofNumber = 0;
 $(document).ready(function(){
-	$('h1').hover(function(){
-		//alert('hello');		
-	})
+
+	$('.btn-primary-submit-canvas').click(function(){
+		//$('#paintboard').width()
+		var canvasWidthVar = document.getElementById("canvasWidth").value;
+		var canvasHeightVar = document.getElementById("canvasHeight").value;
+		
+		console.log(canvasWidthVar);
+		console.log(canvasHeightVar);
+	});
 });
