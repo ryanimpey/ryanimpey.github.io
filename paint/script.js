@@ -4,12 +4,14 @@ $(document).ready(function(){
 	})*/
 
 	// Initialize tooltip component
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+	$(function () {
+		$('[data-toggle="tooltip"]').tooltip()
+	});
 
-// Initialize popover component
-$(function () {
-  $('[data-toggle="popover"]').popover()
-})
+	// Initialize popover component
+	$(function () {
+		$('[data-toggle="popover"]').popover()
+	});
+
+	
 });
