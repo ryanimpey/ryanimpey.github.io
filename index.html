@@ -1,27 +1,371 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Hello</title>
-  <!-- Compiled and minified CSS -->
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/css/materialize.min.css">
-  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
-</head>
-<body>
-  <nav>
-    <div class="nav-wrapper">
-      <a href="#!" class="brand-logo">Logo</a>
-      <ul class="right hide-on-med-and-down">
-        <li><a href="sass.html"><i class="material-icons left">search</i>Link with Left Icon</a></li>
-        <li><a href="badges.html"><i class="material-icons right">view_module</i>Link with Right Icon</a></li>
-      </ul>
-    </div>
-  </nav>
-  <h1>Hello World</h1>
-  <p>I'm hosted with GitHub Pages.</p>
 
+<head>
+	<meta charset="utf-8">
+	<title></title>
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bulma/0.3.1/css/bulma.min.css">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+	<link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+	<canvas id="myCanvas"></canvas>
+	<nav class="nav" id="main-nav">
+		<div class="nav-left">
+			<a class="nav-item">
+				<img src="./images/logo.png">
+			</a>
+		</div>
+
+		<!-- This "nav-toggle" hamburger menu is only visible on mobile -->
+		<!-- You need JavaScript to toggle the "is-active" class on "nav-menu" -->
+		<span class="nav-toggle">
+        <span></span>
+		<span></span>
+		<span></span>
+		</span>
+		<!-- This "nav-menu" is hidden on mobile -->
+		<!-- Add the modifier "is-active" to display it on mobile -->
+		<div class="nav-right nav-menu">
+			<span class="nav-item">
+					<a class="button is-info">Deposit</a>
+				</span>
+			<span class="nav-item">
+					<a class="button is-success">Free Credits</a>
+				</span>
+			<span class="nav-item">
+          <a class="button is-success is-purple">
+            <span class="icon">
+              <i class="fa fa-steam"></i>
+            </span>
+			<span>Sign in</span>
+			</a>
+			</span>
+		</div>
+	</nav>
+	<main>
+		<div class="container is-fluid">
+			<div class="columns">
+				<div class="column is-2">
+					<aside class="menu">
+						<p class="menu-label">
+							Account
+						</p>
+						<ul class="menu-list">
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-money"></i>
+        </span>
+									<span>&nbsp;123</span>
+									<span>Tokens</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-ticket"></i>
+        </span>
+									<span>&nbsp;27</span>
+									<span>Entries</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-clock-o"></i>
+        </span>
+									<span> &nbsp;&nbsp;Activity</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+					<i class="fa fa-shopping-bag"></i>
+				</span>
+									<span> &nbsp;&nbsp;Withdraw</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-sign-out"></i>
+        </span>
+									<span> &nbsp;&nbsp;Logout</span>
+								</a>
+							</li>
+						</ul>
+						<p class="menu-label">
+							Raffles
+						</p>
+						<ul class="menu-list">
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-eercast"></i>
+        </span>
+									<span>&nbsp;Current Raffles</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-superpowers"></i>
+        </span>
+									<span>&nbsp;Free Raffles</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-ravelry"></i>
+        </span>
+									<span>&nbsp;Special Raffles</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-grav"></i>
+        </span>
+									<span>&nbsp;Gravity Raffles</span>
+								</a>
+							</li>
+						</ul>
+						<p class="menu-label">
+							About
+						</p>
+						<ul class="menu-list">
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-question-circle-o"></i>
+        </span>
+									<span>&nbsp;FAQ's</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-address-book-o"></i>
+        </span>
+									<span>&nbsp;Contact</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+          <i class="fa fa-twitter"></i>
+        </span>
+									<span>&nbsp;Twitter</span>
+								</a>
+							</li>
+							<li>
+								<a>
+									<span class="icon">
+					<i class="fa fa-steam-square"></i>
+				</span>
+									<span>&nbsp;Steam</span>
+								</a>
+							</li>
+						</ul>
+						<p class="menu-label">
+							Partners
+						</p>
+						<ul class="menu-list">
+							<li>
+								<a>
+									<span class="icon">
+          					<i class="fa fa-adjust"></i>
+        					</span>
+									<span>&nbsp;Octogo.in</span>
+								</a>
+							</li>
+						</ul>
+					</aside>
+				</div>
+				<div class="column">
+					<div class="columns">
+						<div class="column">
+							<div class="is-info">
+								<figure class="image is-128x128">
+									<img src="http://bulma.io/images/placeholders/256x256.png">
+								</figure>
+							</div>
+						</div>
+						<div class="column">
+							<div class="is-info">
+								<figure class="image is-128x128">
+									<img src="http://bulma.io/images/placeholders/256x256.png">
+								</figure>
+							</div>
+						</div>
+						<div class="column">
+							<div class="is-info">
+								<figure class="image is-128x128">
+									<img src="http://bulma.io/images/placeholders/256x256.png">
+								</figure>
+							</div>
+						</div>
+						<div class="column">
+							<div class="is-info">
+								<figure class="image is-128x128">
+									<img src="http://bulma.io/images/placeholders/256x256.png">
+								</figure>
+							</div>
+						</div>
+						<div class="column">
+							<div class="is-info">
+								<figure class="image is-128x128">
+									<img src="http://bulma.io/images/placeholders/256x256.png">
+								</figure>
+							</div>
+						</div>
+						<div class="column">
+							<div class="is-info">
+								<figure class="image is-128x128">
+									<img src="http://bulma.io/images/placeholders/256x256.png">
+								</figure>
+							</div>
+						</div>
+						<div class="column">
+							<div class="is-info">
+								<figure class="image is-128x128">
+									<img src="http://bulma.io/images/placeholders/256x256.png">
+								</figure>
+							</div>
+						</div>
+						<div class="column">
+							<div class="is-info">
+								<figure class="image is-128x128">
+									<img src="http://bulma.io/images/placeholders/256x256.png">
+								</figure>
+							</div>
+						</div>
+					</div>
+					<div class="tile is-ancestor">
+						<div class="tile is-vertical is-6">
+							<div class="tile">
+								<div class="tile is-parent is-vertical">
+									<article class="tile is-child notification is-primary">
+										<p class="title">M4A4 Desolate Space</p>
+										<p class="subtitle">Minimal Wear <a class="button is-small is-warning">StatTrak!</a></p>
+										<div class="card">
+											<div class="card-image">
+												<figure class="image is-2by1">
+													<img src="https://i.ytimg.com/vi/dNPtgQ2zGLc/maxresdefault.jpg" alt="Image">
+												</figure>
+											</div>
+											<div class="card-content">
+												<div class="content">
+													<progress class="progress is-medium is-purple" value="45" max="100">45%</progress>
+												</div>
+											</div>
+											<footer class="card-footer">
+												<a class="card-footer-item">Buy Ticket</a>
+												<a class="card-footer-item">45/100</a>
+												<a class="card-footer-item">View Entries</a>
+											</footer>
+										</div>
+									</article>
+									<article class="tile is-child notification is-warning">
+										<div class="card">
+											<div class="card-image">
+												<figure class="image is-2by1">
+													<img src="https://i.ytimg.com/vi/dNPtgQ2zGLc/maxresdefault.jpg" alt="Image">
+												</figure>
+											</div>
+											<div class="card-content">
+												<div class="content">
+													<progress class="progress is-medium is-purple" value="45" max="100">45%</progress>
+												</div>
+											</div>
+											<footer class="card-footer">
+												<a class="card-footer-item">Buy Ticket</a>
+												<a class="card-footer-item">45/100</a>
+												<a class="card-footer-item">View Entries</a>
+											</footer>
+										</div>
+									</article>
+								</div>
+								<div class="tile is-parent is-vertical">
+									<article class="tile is-child notification is-danger">
+										<p class="title">M4A4 Desolate Space</p>
+										<p class="subtitle">Minimal Wear <a class="button is-small is-warning">StatTrak!</a></p>
+										<div class="card">
+											<div class="card-image">
+												<figure class="image is-2by1">
+													<img src="https://i.ytimg.com/vi/dNPtgQ2zGLc/maxresdefault.jpg" alt="Image">
+												</figure>
+											</div>
+											<div class="card-content">
+												<div class="content">
+													<progress class="progress is-medium is-purple" value="45" max="100">45%</progress>
+												</div>
+											</div>
+											<footer class="card-footer">
+												<a class="card-footer-item">Buy Ticket</a>
+												<a class="card-footer-item">45/100</a>
+												<a class="card-footer-item">View Entries</a>
+											</footer>
+										</div>
+									</article>
+									<article class="tile is-child notification is-info">
+										<div class="card">
+											<div class="card-image">
+												<figure class="image is-2by1">
+													<img src="https://i.ytimg.com/vi/dNPtgQ2zGLc/maxresdefault.jpg" alt="Image">
+												</figure>
+											</div>
+											<div class="card-content">
+												<div class="content">
+													<progress class="progress is-medium is-purple" value="45" max="100">45%</progress>
+												</div>
+											</div>
+											<footer class="card-footer">
+												<a class="card-footer-item">Buy Ticket</a>
+												<a class="card-footer-item">45/100</a>
+												<a class="card-footer-item">View Entries</a>
+											</footer>
+										</div>
+									</article>
+								</div>
+							</div>
+						</div>
+						<div class="tile is-parent">
+							<article class="tile is-child notification is-success">
+								<p class="title">M4A4 Desolate Space</p>
+								<p class="subtitle">Minimal Wear <a class="button is-small is-warning">StatTrak!</a></p>
+								<div class="card-content">
+									Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+								</div>
+								<div class="card">
+									<div class="card-image">
+										<figure class="image is-2by1">
+											<img src="https://i.ytimg.com/vi/dNPtgQ2zGLc/maxresdefault.jpg" alt="Image">
+										</figure>
+									</div>
+									<div class="card-content">
+										<div class="content">
+											<progress class="progress is-medium is-purple" value="45" max="100">45%</progress>
+										</div>
+									</div>
+									<footer class="card-footer">
+										<a class="card-footer-item">Buy Ticket</a>
+										<a class="card-footer-item">45/100</a>
+										<a class="card-footer-item">View Entries</a>
+									</footer>
+								</div>
+							</article>
+						</div>
+					</div>
+				</div>
+			</div>
+	</main>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+	<script src="./scripts/particles.js"></script>
+	<script src="script.js"></script>
 </body>
-<!-- Compiled and minified JavaScript -->
-<script
-src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.97.8/js/materialize.min.js"></script>
+
 </html>

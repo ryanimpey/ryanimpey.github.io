@@ -1,0 +1,61 @@
+html, body{
+  height: 100%;
+  width: 100%;
+	min-width: 325px !important;
+}
+
+body, main{
+  background: #161616;
+}
+
+#main-nav{
+	height: 70px;
+	background: #252525 repeat top center;
+	animation: animatedBackground 10s linear infinite;
+	-webkit-box-shadow: 0px 5px 10px 0px rgba(29,29,29,1);
+	-moz-box-shadow: 0px 5px 10px 0px rgba(29,29,29,1);
+	box-shadow: 0px 5px 10px 0px rgba(29,29,29,1);
+}
+
+@keyframes animatedBackground {
+	from { background-position: 0 0; }
+	to { background-position: 100% 0; }
+}
+
+.nav-item img {
+  max-height: 2.75rem;
+}
+
+.nav-toggle{
+	margin-top: 10px;
+}
+
+#myCanvas {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  z-index: 0;
+}
+
+main{
+	margin-top: 20px;
+}
+
+.image img, .card{
+	border-radius: 10px;
+}
+
+.is-purple{
+  background: #9b32dc !important;
+}
+
+.is-purple::-webkit-progress-value { background: #9b32dc !important; }
+
+.menu li a{
+  color: white;
+}
+
+.menu-list a:hover, .card-footer-item{
+	color: #9b32dc !important;
+}
