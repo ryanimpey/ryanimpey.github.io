@@ -1,0 +1,66 @@
+#main{
+  background:linear-gradient(
+      rgba(0, 0, 200, 0.2), 
+      rgba(0, 0, 200, 0.2)
+    ),
+    url('https://images.unsplash.com/photo-1476067897447-d0c5df27b5df?auto=format&fit=crop&w=1950&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+}
+
+#about{
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://images.unsplash.com/photo-1505238680356-667803448bb6?auto=format&fit=crop&w=1350&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#portfolio{
+  background: black;
+}
+
+#contact{
+  background:linear-gradient(
+      rgba(0, 0, 0, 0.5), 
+      rgba(0, 0, 0, 0.5)
+    ),
+    url('https://images.unsplash.com/photo-1486758206125-94d07f414b1c?auto=format&fit=crop&w=1950&q=60&ixid=dW5zcGxhc2guY29tOzs7Ozs%3D');
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+#main-name{
+  padding: 5px 0px 15px 0px;
+  border: 5px solid white;
+}
+
+.hero-head{
+  padding-top: 25px;
+}
+
+.portfolio-link{
+  padding: 0px 10px;
+}
+
+.portfolio-holder{
+  margin-top: 25px;
+}
+
+.hero-foot{
+  padding-left: 10px;
+  padding-bottom: 10px;
+}
+
+.feather{
+  margin-right: 10px;
+}
+
+#about-image img{
+  border-radius: 250px;
+}
+
+.portfolio-image{
+  max-width: 200px;
+  border-radius: 250px;
+}
