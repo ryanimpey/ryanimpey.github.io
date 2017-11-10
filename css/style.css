@@ -61,6 +61,14 @@
 }
 
 .portfolio-image{
-  max-width: 200px;
+  max-width: 150px;
   border-radius: 250px;
+}
+
+.portfolio-element{
+   margin: 15px;
+}
+
+.portfolio-description{
+  padding-top: 25px;
 }
